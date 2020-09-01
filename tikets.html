@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Tikets restaurant</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><b>Starbhack Mart</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-5 col-sm-5 col-12">
+        <div class="dropdownmt-3 mt-1">
+          <button class="btn btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Take Away
+          </button>  
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>      
+        </div>
+        <button class="btn btn-primary w-100 mt-1" type="button">
+          <img src="assets/img/usergirl.png" width="20"> Syavira Aprilianti
+        </button>
+        <div class="jumbotron p-1 mt-1 scrolldiv" id="pesanan">
+          <!-- ONCLICK MENU SHOW IN HERE -->
+        </div>
+        <div class=" jumbotron p-2">
+          <div class="card p-2">
+            <p><b>Discount:</b></p>
+            <p>Harga : <span class="float-right" id="harga"></span></p>
+            <p>Tax : <span class="float-right" id="task"></span></p>
+            <div class="alert alert-primary text-center">Total : <b id="totalharga"></b></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-7 col-12">
+        <div class="card p-2 mt-1">
+          <span>Item List</span>
+          <div class="btn-fungsi">
+            <button type="button" class="btn btn-default"><img src="assets/img/search.png" width="20px"></button>
+            <button type="button" class="btn btn-default"><img src="assets/img/titiktiga.png" width="20px"></button>
+            <button type="button" class="btn btn-default"><img src="assets/img/panah.png" width="20px"></button>
+          </div>
+        </div>
+        <div class="jumbotron p-2 mt-1">
+          <div class="row" id="menutampil">
+            <!-- APPEND TAMPILAN FROM JS/CUSTOM.JS -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Pembayaran</label>
+              <input type="number" name="" id="pembayaran" class="form-control">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label>Kembalian</label>
+              <input type="text" name="" id="kembalian" class="form-control" readonly="">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <button  type="button" onclick="window.print()"><img src="assets/img/payment.png" width="170px"></button>
+          
+
+          <div class="delete" id="hapussemua" >
+            <button style="margin-left: 610px; margin-top: 5px;"><img src="assets/img/trash.png"></button>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- JAVASCRIPT MODULE -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script src="assets/js/custom.js"></script>
+</html>

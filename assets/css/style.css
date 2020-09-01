@@ -1,0 +1,15 @@
+.btn-hapus{
+	bottom: 0;
+	position: absolute;
+	right: 15px;
+}
+.scrolldiv{
+	height: 250px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.btn-fungsi{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
